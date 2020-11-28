@@ -198,6 +198,7 @@ public class Perceptron {
                System.out.println(w[c]);
             }
           System.out.println("");
+          System.out.println("Os pesos foram atualizados...");
           
           try {
                    Thread.sleep(1000);
@@ -309,6 +310,8 @@ public class Perceptron {
         }
         
          
+        System.out.println("");
+        System.out.println("--------------------------------------------------------------------");
         
         if (y == 1) {       //rertorna uma frase baseado nos resultados da IA
             
@@ -321,12 +324,13 @@ public class Perceptron {
               System.out.println("it is not a living being");
            }
            
-          System.out.println("");
+        System.out.println("--------------------------------------------------------------------");
+        System.out.println("");
           
           try {
                    Thread.sleep(1000);
                } catch (InterruptedException ex) {
-                   System.out.println("Ocorreu um erro ao pausar: "+ex);
+                   System.out.println("There was an error pausing: "+ex);
                    System.out.println("");
                    ex.printStackTrace();
                }
@@ -360,6 +364,7 @@ public class Perceptron {
                System.out.println(w[c]);
             }
           System.out.println("");
+          System.out.println("Weights has been updated...");
           
           try {
                    Thread.sleep(1000);
