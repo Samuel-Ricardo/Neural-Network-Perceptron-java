@@ -37,6 +37,7 @@ public class Perceptron {
         for (int c = 1; c == 3; c++){ //definimdo os pesos inicias
             w[c]= 0;
         }
+        
         System.out.println("------------------------");
         System.out.println("//choose the language://");
         System.out.println("------------------------");
@@ -47,11 +48,9 @@ public class Perceptron {
         
      
             lingua = tec.nextInt();
-          
-                
             
-            System.out.println(lingua);
-      if(lingua == 2){
+            
+      if(lingua == 2){  // Portuguese Code
           
            do{
         
@@ -69,7 +68,7 @@ public class Perceptron {
         System.out.println("----------------------------");
         
         option = tec.nextInt();
-        e = 1;
+        
         switch (option) {  //converte nome escolhido para bits
               
         case 1:
@@ -206,7 +205,7 @@ public class Perceptron {
         
       }while(online == 1); 
      
-    }else if(lingua == 1){
+    }else if(lingua == 1){  // english code
         
          do{
         
@@ -225,7 +224,7 @@ public class Perceptron {
         
         option = tec.nextInt();
         e = 1;
-        switch (option) {  //converte nome escolhido para bits
+        switch (option) {  //convert chosen name to bits
               
         case 1:
            x[1] = 0;
@@ -287,9 +286,9 @@ public class Perceptron {
         
        
         
-        u = (x[1]*w[1]+x[2]*w[2]+x[3]*w[3])+b*wB; //funçao Combinador/Somador
+        u = (x[1]*w[1]+x[2]*w[2]+x[3]*w[3])+b*wB; // Combiner / Adder function
         
-        if (u<0){  // Funçao de Transferencia (Funçao Degrau)
+        if (u<0){  // Transfer Function (Step Function)
           
             y = 0;
             
@@ -303,13 +302,13 @@ public class Perceptron {
         System.out.println("");
         System.out.println("--------------------------------------------------------------------");
         
-        if (y == 1) {       //rertorna uma frase baseado nos resultados da IA
+        if (y == 1) {     // returns a sentence based on AI results
             
             System.out.println("it's a living being");
         
             
                   
-            }else{              //rertorna uma frase baseado nos resultados da IA
+            }else{              // returns a sentence based on AI results
             
               System.out.println("it is not a living being");
            }
@@ -333,10 +332,10 @@ public class Perceptron {
             
            e = tec.nextInt();
         
-        er = e - y; //verificando se a IA acertou
+        er = e - y; // checking if the AI got it right
 
         
-        for (int c = 1; c == 3; c++){       //Redefinindo os pesos
+        for (int c = 1; c == 3; c++){       // Redefining the weights
                 w[c] = w[c]+n*er*x[c];
             }
         
