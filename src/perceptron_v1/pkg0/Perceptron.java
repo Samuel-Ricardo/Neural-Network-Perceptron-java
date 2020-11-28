@@ -15,7 +15,7 @@ public class Perceptron {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       int opc;
+       int option;
        
        Scanner tec = new Scanner(System.in); //Scanner para Receber os Dados de Entrada
        
@@ -36,7 +36,6 @@ public class Perceptron {
      
         for (int c = 1; c == 3; c++){ //definimdo os pesos inicias
             w[c]= 0;
-            System.out.println("1");
         }
         System.out.println("------------------------");
         System.out.println("//choose the language://");
@@ -69,9 +68,9 @@ public class Perceptron {
         System.out.println("+(8)-feijao                +");
         System.out.println("----------------------------");
         
-        opc = tec.nextInt();
+        option = tec.nextInt();
         e = 1;
-        switch (opc) {  //converte nome escolhido para bits
+        switch (option) {  //converte nome escolhido para bits
               
         case 1:
            x[1] = 0;
@@ -175,15 +174,10 @@ public class Perceptron {
             System.out.println("(1) - sim");
             System.out.println("(0) - nao");
             
-            int res = tec.nextInt();
-            
-            if(res == y){   //verificando se a IA acertou
-                e = 0;
-            }else{ 
-                e = 1;    
-            }
+            e = tec.nextInt();
         
-        er = e - y;
+        er = e - y; //verificando se a IA acertou
+
         
         for (int c = 1; c == 3; c++){       //Redefinindo os pesos
                 w[c] = w[c]+n*er*x[c];
@@ -233,9 +227,9 @@ public class Perceptron {
         System.out.println("+(8)-bean                  +");
         System.out.println("----------------------------");
         
-        opc = tec.nextInt();
+        option = tec.nextInt();
         e = 1;
-        switch (opc) {  //converte nome escolhido para bits
+        switch (option) {  //converte nome escolhido para bits
               
         case 1:
            x[1] = 0;
