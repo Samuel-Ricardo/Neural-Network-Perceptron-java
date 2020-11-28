@@ -161,7 +161,15 @@ public class Perceptron {
            
         System.out.println("--------------------------------------------------------------------");
         System.out.println("");
-          
+        
+               try {
+                   Thread.sleep(1000);
+               } catch (InterruptedException ex) {
+                   System.out.println("Ocorreu um erro ao pausar: "+ex);
+                   System.out.println("");
+                   ex.printStackTrace();
+               }
+        
         System.out.println("Ele é um ser vivo??");
             
             System.out.println("(1) - sim");
@@ -307,6 +315,15 @@ public class Perceptron {
            }
            
           System.out.println("");
+          
+          try {
+                   Thread.sleep(1000);
+               } catch (InterruptedException ex) {
+                   System.out.println("Ocorreu um erro ao pausar: "+ex);
+                   System.out.println("");
+                   ex.printStackTrace();
+               }
+        
           
         System.out.println("Is it a living being?");
             
