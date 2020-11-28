@@ -1,6 +1,17 @@
 # __*IA-Perceptron-java*__
 
-Tags -
+![Badge](https://img.shields.io/github/license/Samuel-Ricardo/IA-Perceptron-java)
+
+![Badge](https://img.shields.io/static/v1?label=Made%20Whit&message=Java&color=red&style=for-the-badge&logo=JAVA)
+![Badge](https://img.shields.io/static/v1?label=Made%20Whit&message=NetBeans&color=red&style=for-the-badge&logo=JAVA)
+
+![Badge](https://img.shields.io/static/v1?label=Version&message=1.0.2&color=green&style=for-the-badge&logo=GITHUB)
+[![Badge](https://img.shields.io/static/v1?label=Artificial&message=Intelligence&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/search?q=Artificial+Intelligence)
+[![Badge](https://img.shields.io/static/v1?label=Neural&message=Network&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/search?q=Neural+Network)
+
+[![Badge](https://img.shields.io/static/v1?label=Samuel&message=Ricardo&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/Samuel-Ricardo)
+
+/* As Tags São clicáveis ;) */
  
 ## __*Versão Atual (Finalizado):*__
 - __*Notas da Versão 1.0.2*__
