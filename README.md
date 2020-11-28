@@ -1,33 +1,33 @@
-# IA-Perceptron-java
+# __*IA-Perceptron-java*__
 
 Tags -
  
-## Versão Atual (Finalizado):
-- Notas da Versão 1.0.2 
+## __*Versão Atual (Finalizado):*__
+- __*Notas da Versão 1.0.2*__
   
-# Informações Gerais:
-- Autor: [Samuel Ricardo Cabral de Barros](https://github.com/Samuel-Ricardo)
+# __*Informações Gerais:*__
+- __*Autor:*__ [Samuel Ricardo Cabral de Barros](https://github.com/Samuel-Ricardo)
 
-- Estado: Finalizado
+- __*Estado:*__ Finalizado
 
-- Versão Atual: 1.0.2
+- __*Versão Atual:*__ 1.0.2
 
-## O que foi Usado
-- [Java](https://www.java.com/pt-BR/about/whatis_java.jsp),
-- [NetBeans](https://netbeans.apache.org/)
+## __*O que foi Usado*__
+- __*[Java](https://www.java.com/pt-BR/about/whatis_java.jsp)*__,
+- __*[NetBeans](https://netbeans.apache.org/)*__
  
-## O que é necessário para rodar:
-- [JDK](https://www.oracle.com/java/technologies/javase-downloads.html),
-- alguma IDE,
-	- Recomendado: [Eclipse](https://www.eclipse.org/) ou [NetBeans](https://netbeans.apache.org/download/index.html)
+## __*O que é necessário para rodar:*__
+- __*[JDK](https://www.oracle.com/java/technologies/javase-downloads.html)*__,
+- __*alguma IDE*__,
+	- __*Recomendado:*__ [Eclipse](https://www.eclipse.org/) ou [NetBeans](https://netbeans.apache.org/download/index.html)
 
-## Fontes: 
+## __*Fontes:*__ 
 
-- Vídeo -
+- __*Vídeo*__ -
 [Redes Neurais Artificiais, Perceptron Simples (Parte 1): Problema, Arquitetura e Componentes](https://youtu.be/PMfarAZdNSA) 
-	- do Canal: [Serafim Nascimento](https://www.youtube.com/channel/UC4nbGdTDlcNrbZGVt732lmQ)
+	- __*do Canal:*__ [Serafim Nascimento](https://www.youtube.com/channel/UC4nbGdTDlcNrbZGVt732lmQ)
     
-[![Redes Neurais Artificiais, Perceptron Simples,Parte 1: Problema, Arquitetura e Componentes](http://img.youtube.com/vi/PMfarAZdNSA/0.jpg)](http://www.youtube.com/watch?v=PMfarAZdNSA "Redes Neurais Artificiais, Perceptron Simples, Parte 1: Problema, Arquitetura e Componentes")
+> [![Redes Neurais Artificiais, Perceptron Simples,Parte 1: Problema, Arquitetura e Componentes](http://img.youtube.com/vi/PMfarAZdNSA/0.jpg)](http://www.youtube.com/watch?v=PMfarAZdNSA "Redes Neurais Artificiais, Perceptron Simples, Parte 1: Problema, Arquitetura e Componentes")
 
 
 Exemplo do uso de uma Perceptron usando 1 neurônio para descobrir se é um ser vivo ou não  Usando a Linguagem Java;
