@@ -30,7 +30,7 @@ public class Perceptron {
        int y;           //Resultado
        int e = 0;       //Codigo de Erro
        int er;          //Verificaçao de Erro
-       int online = 1;  // manter repetindo o codigo
+       int online = 1;  // manter o codigo repetindo
        int lingua;      //escolher a lingua
        
      
