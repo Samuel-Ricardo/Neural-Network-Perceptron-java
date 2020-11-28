@@ -145,7 +145,8 @@ public class Perceptron {
             
         }
         
-         
+        System.out.println("");
+        System.out.println("--------------------------------------------------------------------");
         
         if (y == 1) {       //rertorna uma frase baseado nos resultados da IA
             
@@ -158,11 +159,8 @@ public class Perceptron {
               System.out.println("nao è um ser vivo");
            }
            
-        
-          System.out.println("");
-          System.out.println("");
-          
-          System.out.println(y);
+        System.out.println("--------------------------------------------------------------------");
+        System.out.println("");
           
         System.out.println("Ele é um ser vivo??");
             
@@ -308,8 +306,6 @@ public class Perceptron {
               System.out.println("it is not a living being");
            }
            
-        
-          System.out.println("");
           System.out.println("");
           
         System.out.println("Is it a living being?");
