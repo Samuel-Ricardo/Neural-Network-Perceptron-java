@@ -147,7 +147,7 @@ public class Perceptron {
         
          
         
-        if (y == 0) {       //rertorna uma frase baseado nos resultados da IA
+        if (y == 1) {       //rertorna uma frase baseado nos resultados da IA
             
             System.out.println("è um ser vivo");
         
