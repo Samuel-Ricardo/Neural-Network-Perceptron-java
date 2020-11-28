@@ -181,16 +181,12 @@ public class Perceptron {
         
         for (int c = 1; c == 3; c++){       //Redefinindo os pesos
                 w[c] = w[c]+n*er*x[c];
-                System.out.println(w[c]);
             }
         
         wB = wB+n*er*b;
         
          
           System.out.println("");
-          for (int c = 1; c == 3; c++){       //Redefinindo os pesos
-               System.out.println(w[c]);
-            }
           System.out.println("");
           System.out.println("Os pesos foram atualizados...");
           
@@ -335,28 +331,19 @@ public class Perceptron {
             System.out.println("(1) - Yes");
             System.out.println("(0) - not");
             
-            int res = tec.nextInt();
-            
-            if(res == y){   //verificando se a IA acertou
-                e = 0;
-            }else{ 
-                e = 1;    
-            }
+           e = tec.nextInt();
         
-        er = e - y;
+        er = e - y; //verificando se a IA acertou
+
         
         for (int c = 1; c == 3; c++){       //Redefinindo os pesos
                 w[c] = w[c]+n*er*x[c];
-                System.out.println(w[c]);
             }
         
         wB = wB+n*er*b;
         
          
           System.out.println("");
-          for (int c = 1; c == 3; c++){       //Redefinindo os pesos
-               System.out.println(w[c]);
-            }
           System.out.println("");
           System.out.println("Weights has been updated...");
           
