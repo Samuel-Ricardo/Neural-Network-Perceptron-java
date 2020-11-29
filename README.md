@@ -80,23 +80,24 @@ Possuímos **8 valores (palavras)**, então foi preciso descobrir com **quantos 
  
  logo:
 
+#
  - 1 bit **->** 2^1 = 2 valores  
 
    - 0 e 1
- 
+#
  
  - 2 bits **->** 2^2 = 4 valores 
  
    - 00, 01, 10, 11
- 
+# 
  
  - 3 bits **->** 2^3 = 8 valores 
 
    - 000, 001, 010, 011, 100, 101, 110, 111
+#   
    
    
-   
-   ![Conversao de dados](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Conversao_de_dados.jpeg)
+> ![Conversao de dados](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Conversao_de_dados.jpeg)
    
    
    
@@ -203,9 +204,10 @@ O mesmo vale para o resultado, como os resultados possíveis são apenas 2 ( **�
 
 ## __*Arquitetura Perceptron Simples*__
 
-![arquitetura de uma perceptron](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Arquitetura_Perceptron.jpeg)
+> ![arquitetura de uma perceptron](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Arquitetura_Perceptron.jpeg)
 
 - __*Essa imagem é uma demonstração visual de como a RNA (Rede Neural) trabalha.*__
+
 
 - **X** = Dados de entrada -> bit (1 / 0)
   - [tipo int, pois só são aceitos os valores 1 e 0]
@@ -229,7 +231,7 @@ O mesmo vale para o resultado, como os resultados possíveis são apenas 2 ( **�
   
 - **N** =   Taxa de Aprendizado, é uma constante e seu valor é aleatório, mas para este código foi escolhido o valor 1.
 
-![Componentes do Perceptron](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Componemtes_Perceptron.jpeg)
+> ![Componentes do Perceptron](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Componemtes_Perceptron.jpeg)
 
 
 
@@ -270,7 +272,7 @@ Um detalhe a se destacar, é que o peso **inicia com um valor aleatório**, nest
 
 
 
-![Treinamento 02](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_02.jpeg)
+> ![Treinamento 02](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_02.jpeg)
 
 - __*Foi Selecionado o primeiro exemplo (000) e o modelo foi preenchido*__
 
@@ -279,19 +281,28 @@ Um detalhe a se destacar, é que o peso **inicia com um valor aleatório**, nest
 
 O primeiro cálculo será feito utilizando a **Função Combinadora / Somadora**, que realiza uma soma ponderada entre o produto de cada entrada e seu peso sináptico **equivalente** e somaremos com o produto entre o bias e seu peso sináptico:
 
+#
 
  - produto de cada entrada e seu peso sináptico
    - X[1] * W[1]
 
+#
+
 - soma ponderada 
    - ( X[1] * W[1]  +  X[2] * W[2] ...)
+
+#
 
 - somaremos com o produto entre o bias e seu peso sináptico.
   -  + ( Bias * WBias)
 
+#
+
 - como resultado temos:
 
   -  **U** = (**X**[**i**] * **W**[**i**]) + **Bias** * **Wb**
+
+#
 
 - Como é representado no código:
 
@@ -299,8 +310,9 @@ O primeiro cálculo será feito utilizando a **Função Combinadora / Somadora**
   u = ( x[1] * w[1] + x[2] * w[2] + x[3] * w[3] ) + b * wB;
 ```
 
+#
 
-![Treinamento 03](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_03.jpeg)
+> ![Treinamento 03](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_03.jpeg)
 
 - __*Após os dados serem preenchidos, agora eles começam a ser processados passando pela **Função Combinadora / Somadora***__
 
@@ -311,11 +323,14 @@ O primeiro cálculo será feito utilizando a **Função Combinadora / Somadora**
 
 Para obtermos o resultado final (1 ou 0) utilizaremos uma **Função de Transferência**, existem várias, porém será usada a **Função Degrau**, que basicamente funciona assim:
 
+#
+
  Se o “U” (resultado) for **MENOR** que 0 o resultado final (**Y**) será **0**
 	-> se **U** < **0** então **Y** será = **0**
 
  Já se o “U” (resultado) for **IGUAL OU MAIOR** que 0 o resultado final (**Y**) será **1**
 	-> se **U** >= **0** então **Y** será = **1**
+#
 
 Como é representado neste trecho do código:
 
@@ -333,7 +348,7 @@ Como é representado neste trecho do código:
 ```
 
 
-![Treinamento 04](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_04.jpeg)
+> ![Treinamento 04](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_04.jpeg)
 
 - __*Função de Transferência sendo aplicada.*__
 
@@ -367,14 +382,14 @@ se **Et** for igual a **0** significa que a rede neural **acertou**, porém o al
 
 
 
-![Treinamento 05](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_05.jpeg)
+> ![Treinamento 05](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_05.jpeg)
 
 - __*Aplicando o cálculo de erro, para verificar se a rede neural acertou*__
 
 
 
 
-![Treinamento 06](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_06.jpeg)
+> ![Treinamento 06](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_06.jpeg)
 
 - __*Neste caso a Rede Neural errou*__
 
@@ -410,36 +425,36 @@ Nó código está escrito desta forma:
 
 
 
-![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_07.jpeg)
+> ![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_07.jpeg)
 
 - __*Reajustando o primeiro Peso Sináptico*__
 
 
-![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_08.jpeg)
+> ![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_08.jpeg)
 
 - __*Reajustando o Segundo Peso Sináptico*__
 
 
-![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_09.jpeg)
+> ![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_09.jpeg)
 
 - __*Reajustando o terceiroPeso Sináptico*__
 
 
-![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_10.jpeg)
+> ![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_10.jpeg)
 
 - __*Reajustando o Peso Sináptico do Bias*__
 
 
 
-![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_11.jpeg)
+> ![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_11.jpeg)
 
 - __*Reajustando o Peso Sináptico do Bias*__
 
 
 
+##
 
-
-
+- Agora é só repetir o algoritmo até que a Rede Neural consiga acertar
 
 
 
