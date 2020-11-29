@@ -228,15 +228,42 @@ Essa imagem é uma demonstração visual de como a RNA (Rede Neural) trabalha.
 
 
 
+
 ## Dados de Entrada
 
 Para os dados de entrada (**X**) será necessário um vetor com o tamanho **equivalente a quantidade de bits**, que nesse caso são **3 bits por palavra**, então precisamos de um vetor com **3 posições.**
 
 ```java
 int[] x = new int [4];
+
+
 ```
+
+
 
 ![treinamento 01](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_01.jpeg)
 
 Modelo de Um neurônio
+
+
+
+## Pesos Sinápticos 
+
+Para os pesos (**W**) será necessário um vetor com o **tamanho equivalente aos dados de entrada (X)**, ou seja, **para cada bit (posição) do vetor X será necessário um peso (posição) do vetor W**, neste caso como  vetor X tem 3 posições, o vetor W terá **3 posições**.
+
+```Java
+float [] w =  new float [4];
+```
+
+Um detalhe a se destacar, é que o peso **inicia com um valor aleatório**, neste caso foi decidido que todos os pesos iniciariam com o **valor 0** e o mesmo vale para o **peso do bias**, como mostrado na imagem acima e neste trecho de código onde “c” é o contador :
+
+```java
+	for (int c = 1; c == 3; c++){
+            w[c]= 0;
+        }
+```
+
+![Treinamento 02](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_02.jpeg)
+
+Foi Selecionado o primeiro exemplo (000) e o modelo foi preenchido
 
