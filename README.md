@@ -200,7 +200,7 @@ O mesmo vale para o resultado, como os resultados possíveis são apenas 2 ( **�
 
 ![arquitetura de uma perceptron](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Arquitetura_Perceptron.jpeg)
 
-Essa imagem é uma demonstração visual de como a RNA (Rede Neural) trabalha.
+- Essa imagem é uma demonstração visual de como a RNA (Rede Neural) trabalha.
 
 - **X** = Dados de entrada -> bit (1 / 0)
   - [tipo int, pois só são aceitos os valores 1 e 0]
@@ -243,7 +243,7 @@ int[] x = new int [4];
 
 ![treinamento 01](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_01.jpeg)
 
-Modelo de Um neurônio
+- Modelo de Um neurônio
 
 
 
@@ -263,7 +263,38 @@ Um detalhe a se destacar, é que o peso **inicia com um valor aleatório**, nest
         }
 ```
 
+
+
 ![Treinamento 02](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_02.jpeg)
 
-Foi Selecionado o primeiro exemplo (000) e o modelo foi preenchido
+- Foi Selecionado o primeiro exemplo (000) e o modelo foi preenchido
 
+
+## Função Combinadora / Somadora
+
+O primeiro cálculo será feito utilizando a **Função Combinadora / Somadora**, que realiza uma soma ponderada entre o produto de cada entrada e seu peso sináptico **equivalente** e somaremos com o produto entre o bias e seu peso sináptico:
+
+
+ - produto de cada entrada e seu peso sináptico
+   - X[1] * W[1]
+
+- soma ponderada 
+   - ( X[1] * W[1]  +  X[2] * W[2] ...)
+
+- somaremos com o produto entre o bias e seu peso sináptico.
+  -  + ( Bias * WBias)
+
+- como resultado temos:
+
+  -  **U** = (**X**[**i**] * **W**[**i**]) + **Bias** * **Wb**
+
+- Como é representado no código:
+
+```java
+  u = ( x[1] * w[1] + x[2] * w[2] + x[3] * w[3] ) + b * wB;
+```
+
+
+![Treinamento 03](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_03.jpeg)
+
+- Após os dados serem preenchidos, agora eles começam a ser processados passando pela **Função Combinadora / Somadora**
