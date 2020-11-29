@@ -96,3 +96,101 @@ Possuímos **8 valores (palavras)**, então foi preciso descobrir com **quantos 
    
    
    
+após chegar no resultado, resta escolher qual palavra (valor) cada bit vai representar, 
+
+Nomes | Bits
+------|-----
+Peixe | 000
+Colher | 001
+sapo | 010
+cachorro | 100
+aquario | 011
+pessoa | 110
+agulha | 101
+feijao | 111
+ 
+ 
+- como é mostrado neste trecho do código.
+ 
+ ```java
+ 
+ System.out.println("----------------------------");  
+        System.out.println("//Descubra se é Ser Vivo: //");
+        System.out.println("----------------------------");
+        System.out.println("+(1)-peixe                 +");
+        System.out.println("+(2)-colher                +");
+        System.out.println("+(3)-sapo                  +");  
+        System.out.println("+(4)-cachorro              +");
+        System.out.println("+(5)-aquario               +");
+        System.out.println("+(6)-pessoa                +");
+        System.out.println("+(7)-agulha                +");
+        System.out.println("+(8)-feijao                +");
+        System.out.println("----------------------------");
+        
+        option = tec.nextInt();
+
+        switch (option) {  //converte nome escolhido para bits
+              
+        case 1:
+           x[1] = 0;
+           x[2] = 0;
+           x[3] = 0;
+         
+        break;
+        
+        case 2:
+           x[1] = 0;
+           x[2] = 0;
+           x[3] = 1;
+           
+        break;
+        
+        case 3:
+           x[1] = 0;
+           x[2] = 1;
+           x[3] = 0;
+           
+        break;
+        
+        case 4:
+           x[1] = 1;
+           x[2] = 0;
+           x[3] = 0;
+           
+        break;
+        
+        case 5:
+           x[1] = 0;
+           x[2] = 1;
+           x[3] = 1;
+           
+        break;
+        
+        case 6:
+           x[1] = 1;
+           x[2] = 1;
+           x[3] = 0;
+           
+        break;
+        
+        case 7:
+           x[1] = 1;
+           x[2] = 0;
+           x[3] = 1;
+          
+        break;
+        
+        case 8:
+           x[1] = 1;
+           x[2] = 1;
+           x[3] = 1;
+           
+        break;
+    }
+ ```
+ 
+O mesmo vale para o resultado, como os resultados possíveis são apenas 2 ( **é um ser vivo ou nao**), podemos representar com:
+
+- 1 bit -> 2^1 
+
+  - 1 (verdadeiro) e 0 (falso)
