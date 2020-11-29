@@ -378,3 +378,68 @@ se **Et** for igual a **0** significa que a rede neural **acertou**, porém o al
 
 - Neste caso a Rede Neural errou
 
+
+
+
+## Algoritmo de Aprendizado(Regra Delta)
+	
+A função deste cálculo é **reajustar os pesos sinápticos de acordo com cálculo do Erro (Et)**, para isso existem vários algoritmos, mas, para este código foi usado a **Regra delta**, o mesmo vale para o peso do Bias:
+
+-  **W**[**I**] = **W**[**I**] + **N** * **Et** * **X**[**I**]
+
+
+Onde **“N”**  é a taxa de Aprendizado.
+
+
+Veja o Exemplo a seguir:
+
+-  **W**[**1**] = **W** [**1**] + **1** * **Et** * **X**[**1**]
+
+
+Nó código está escrito desta forma:
+
+```java
+	for (int c = 1; c == 3; c++){      
+                w[c] = w[c]+n*er*x[c];
+                System.out.println(w[c]);
+            }
+        
+        wB = wB+n*er*b;
+```
+
+
+
+
+![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_07.jpeg)
+
+- Reajustando o primeiro Peso Sináptico
+
+
+![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_08.jpeg)
+
+- Reajustando o Segundo Peso Sináptico
+
+
+![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_09.jpeg)
+
+- Reajustando o terceiroPeso Sináptico
+
+
+![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_10.jpeg)
+
+- Reajustando o Peso Sináptico do Bias
+
+
+
+![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_11.jpeg)
+
+- Reajustando o Peso Sináptico do Bias
+
+
+
+
+
+
+
+
+
