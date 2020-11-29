@@ -335,4 +335,46 @@ Como é representado neste trecho do código:
 
 ![Treinamento 04](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_04.jpeg)
 
-Função de Transferência sendo aplicada.
+- Função de Transferência sendo aplicada.
+
+
+
+## Algoritmo de Aprendizado (Correção de Erro)
+
+O método de aprendizagem trabalhado, é o método de **Aprendizagem Supervisionada**, onde nos é dado um conjunto de dados rotulados que já sabemos qual é a nossa saída correta e que deve ser semelhante ao conjunto, tendo a ideia de que existe uma relação entre a entrada e a saída (Fonte: [Opensanca](https://medium.com/opensanca/aprendizagem-de-maquina-supervisionada-ou-n%C3%A3o-supervisionada-7d01f78cd80a) ([Pedro Barros](https://pedro-barros.medium.com/?source=post_page-----7d01f78cd80a--------------------------------)))
+
+Sendo assim o cálculo do  erro será feito da seguinte forma:
+
+
+## Cálculo do Erro
+
+A função deste cálculo é **verificar se a rede neural acertou ou não.** 
+
+O cálculo do Erro (**Et**) será dado pela diferença entre o resultado correto (**Yc**) e o resultado da Rede Neural (**Y**):
+
+   - **Et** = **Yc** - **Y**
+
+Como mostra o trecho do código:
+
+
+```java
+	 er = e - y;
+```
+
+
+se **Et** for igual a **0** significa que a rede neural **acertou**, porém o algoritmo de aprendizagem ainda **deve ser executado**, pois se tudo estiver correto o algoritmo irá manter o mesmo valor para os pesos..
+
+
+
+
+![Treinamento 05](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_05.jpeg)
+
+- Aplicando o cálculo de erro, para verificar se a rede neural acertou
+
+
+
+
+![Treinamento 06](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_06.jpeg)
+
+- Neste caso a Rede Neural errou
+
