@@ -198,6 +198,8 @@ O mesmo vale para o resultado, como os resultados possíveis são apenas 2 ( **�
 
 ## Arquitetura Perceptron Simples
 
+![arquitetura de uma perceptron](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Arquitetura_Perceptron.jpeg)
+
 Essa imagem é uma demonstração visual de como a RNA trabalha,.
 
 - X = Dados de entrada -> bit (1 / 0)
