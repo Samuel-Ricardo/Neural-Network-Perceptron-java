@@ -205,7 +205,7 @@ O mesmo vale para o resultado, como os resultados possíveis são apenas 2 ( **�
 
 ![arquitetura de uma perceptron](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Arquitetura_Perceptron.jpeg)
 
-- Essa imagem é uma demonstração visual de como a RNA (Rede Neural) trabalha.
+- __*Essa imagem é uma demonstração visual de como a RNA (Rede Neural) trabalha.*__
 
 - **X** = Dados de entrada -> bit (1 / 0)
   - [tipo int, pois só são aceitos os valores 1 e 0]
@@ -248,7 +248,7 @@ int[] x = new int [4];
 
 ![treinamento 01](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_01.jpeg)
 
-- Modelo de Um neurônio
+- __*Modelo de Um neurônio*__
 
 
 
@@ -272,10 +272,10 @@ Um detalhe a se destacar, é que o peso **inicia com um valor aleatório**, nest
 
 ![Treinamento 02](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_02.jpeg)
 
-- Foi Selecionado o primeiro exemplo (000) e o modelo foi preenchido
+- __*Foi Selecionado o primeiro exemplo (000) e o modelo foi preenchido*__
 
 
-## Função Combinadora / Somadora
+## __*Função Combinadora / Somadora
 
 O primeiro cálculo será feito utilizando a **Função Combinadora / Somadora**, que realiza uma soma ponderada entre o produto de cada entrada e seu peso sináptico **equivalente** e somaremos com o produto entre o bias e seu peso sináptico:
 
@@ -302,7 +302,7 @@ O primeiro cálculo será feito utilizando a **Função Combinadora / Somadora**
 
 ![Treinamento 03](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_03.jpeg)
 
-- Após os dados serem preenchidos, agora eles começam a ser processados passando pela **Função Combinadora / Somadora**
+- __*Após os dados serem preenchidos, agora eles começam a ser processados passando pela **Função Combinadora / Somadora***__
 
 
 
@@ -335,7 +335,7 @@ Como é representado neste trecho do código:
 
 ![Treinamento 04](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_04.jpeg)
 
-- Função de Transferência sendo aplicada.
+- __*Função de Transferência sendo aplicada.*__
 
 
 
@@ -369,14 +369,14 @@ se **Et** for igual a **0** significa que a rede neural **acertou**, porém o al
 
 ![Treinamento 05](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_05.jpeg)
 
-- Aplicando o cálculo de erro, para verificar se a rede neural acertou
+- __*Aplicando o cálculo de erro, para verificar se a rede neural acertou*__
 
 
 
 
 ![Treinamento 06](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_06.jpeg)
 
-- Neste caso a Rede Neural errou
+- __*Neste caso a Rede Neural errou*__
 
 
 
@@ -385,7 +385,7 @@ se **Et** for igual a **0** significa que a rede neural **acertou**, porém o al
 	
 A função deste cálculo é **reajustar os pesos sinápticos de acordo com cálculo do Erro (Et)**, para isso existem vários algoritmos, mas, para este código foi usado a **Regra delta**, o mesmo vale para o peso do Bias:
 
--  **W**[**I**] = **W**[**I**] + **N** * **Et** * **X**[**I**]
+-  **W**[**i**] = **W**[**i**] + **N** * **Et** * **X**[**i*]
 
 
 Onde **“N”**  é a taxa de Aprendizado.
@@ -412,28 +412,28 @@ Nó código está escrito desta forma:
 
 ![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_07.jpeg)
 
-- Reajustando o primeiro Peso Sináptico
+- __*Reajustando o primeiro Peso Sináptico*__
 
 
 ![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_08.jpeg)
 
-- Reajustando o Segundo Peso Sináptico
+- __*Reajustando o Segundo Peso Sináptico*__
 
 
 ![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_09.jpeg)
 
-- Reajustando o terceiroPeso Sináptico
+- __*Reajustando o terceiroPeso Sináptico*__
 
 
 ![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_10.jpeg)
 
-- Reajustando o Peso Sináptico do Bias
+- __*Reajustando o Peso Sináptico do Bias*__
 
 
 
 ![](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_11.jpeg)
 
-- Reajustando o Peso Sináptico do Bias
+- __*Reajustando o Peso Sináptico do Bias*__
 
 
 
