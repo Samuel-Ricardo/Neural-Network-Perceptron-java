@@ -103,7 +103,7 @@ Possuímos **8 valores (palavras)**, então foi preciso descobrir com **quantos 
    
 após chegar no resultado, resta escolher qual palavra (valor) cada bit vai representar, 
 
-__*Nomes | Bits
+__*Nomes*__ | __*Bits*__
 ------|-----
 Peixe | 000
 Colher | 001
@@ -112,7 +112,7 @@ cachorro | 100
 aquario | 011
 pessoa | 110
 agulha | 101
-feijao | 111 *__
+feijao | 111
  
  
 - como é mostrado neste trecho do código.
