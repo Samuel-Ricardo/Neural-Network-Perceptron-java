@@ -88,3 +88,11 @@ Possuímos **8 valores (palavras)**, então foi preciso descobrir com **quantos 
  - 3 bits **->** 2^3 = 8 valores 
 
    - 000, 001, 010, 011, 100, 101, 110, 111
+   
+   
+   
+   ![Conversao de dados](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Conversao_de_dados.jpeg)
+   
+   
+   
+   
