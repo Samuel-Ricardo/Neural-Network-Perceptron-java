@@ -224,4 +224,19 @@ Essa imagem é uma demonstração visual de como a RNA (Rede Neural) trabalha.
   
 - **N** =   Taxa de Aprendizado, é uma constante e seu valor é aleatório, mas para este código foi escolhido o valor 1.
 
+![Componentes do Perceptron](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Componemtes_Perceptron.jpeg)
+
+
+
+## Dados de Entrada
+
+Para os dados de entrada (**X**) será necessário um vetor com o tamanho **equivalente a quantidade de bits**, que nesse caso são **3 bits por palavra**, então precisamos de um vetor com **3 posições.**
+
+```java
+int[] x = new int [4];
+```
+
+![treinamento 01](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_01.jpeg)
+
+Modelo de Um neurônio
 
