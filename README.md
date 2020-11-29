@@ -303,3 +303,36 @@ O primeiro cálculo será feito utilizando a **Função Combinadora / Somadora**
 ![Treinamento 03](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_03.jpeg)
 
 - Após os dados serem preenchidos, agora eles começam a ser processados passando pela **Função Combinadora / Somadora**
+
+
+
+
+## Função de Transferência (Função Degrau)
+
+Para obtermos o resultado final (1 ou 0) utilizaremos uma **Função de Transferência**, existem várias, porém será usada a **Função Degrau**, que basicamente funciona assim:
+
+ Se o “U” (resultado) for **MENOR** que 0 o resultado final (**Y**) será **0**
+	-> se **U** < **0** então **Y** será = **0**
+
+ Já se o “U” (resultado) for **IGUAL OU MAIOR** que 0 o resultado final (**Y**) será **1**
+	-> se **U** >= **0** então **Y** será = **1**
+
+Como é representado neste trecho do código:
+
+
+```java
+  if (u<0){            
+
+            y = 0;
+            
+        }else{
+        
+            y = 1;
+            
+   }
+```
+
+
+![Treinamento 04](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_04.jpeg)
+
+Função de Transferência sendo aplicada.
