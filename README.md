@@ -66,7 +66,7 @@ para obter os dados de input (Entrada de dados).
 Os procedimentos são baseados em lógica, ou seja, ele **não depende da linguagem de programação**, a mesma lógica pode ser aplicada a **qualquer** outra linguagem, incluindo algoritmos como o VisualG.
  
 
-## Conversão de dados
+## __*Conversão de dados*__
  
 As **redes neurais entendem apenas [bits](https://pt.wikipedia.org/wiki/Bit#:~:text=O%20bit%20(simplifica%C3%A7%C3%A3o%20para%20d%C3%ADgito,ou%20passagem%20de%20energia%2C%20respectivamente. )**, por isso, de alguma forma, deve ser feita uma conversão dos dados para bits fazendo com que a rede neural seja capaz de compreender e processar os dados, um exemplo simples seria utilizar  1 (Verdadeiro) ou 0 (falso) para indicar se um funcionário está empregado ou desempregado.
  
@@ -103,7 +103,7 @@ Possuímos **8 valores (palavras)**, então foi preciso descobrir com **quantos 
    
 após chegar no resultado, resta escolher qual palavra (valor) cada bit vai representar, 
 
-Nomes | Bits
+__*Nomes | Bits
 ------|-----
 Peixe | 000
 Colher | 001
@@ -112,7 +112,7 @@ cachorro | 100
 aquario | 011
 pessoa | 110
 agulha | 101
-feijao | 111
+feijao | 111 *__
  
  
 - como é mostrado neste trecho do código.
@@ -201,7 +201,7 @@ O mesmo vale para o resultado, como os resultados possíveis são apenas 2 ( **�
   - 1 (verdadeiro) e 0 (falso)
 
 
-## Arquitetura Perceptron Simples
+## __*Arquitetura Perceptron Simples*__
 
 ![arquitetura de uma perceptron](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Arquitetura_Perceptron.jpeg)
 
@@ -234,7 +234,7 @@ O mesmo vale para o resultado, como os resultados possíveis são apenas 2 ( **�
 
 
 
-## Dados de Entrada
+## __*Dados de Entrada*__
 
 Para os dados de entrada (**X**) será necessário um vetor com o tamanho **equivalente a quantidade de bits**, que nesse caso são **3 bits por palavra**, então precisamos de um vetor com **3 posições.**
 
@@ -252,7 +252,7 @@ int[] x = new int [4];
 
 
 
-## Pesos Sinápticos 
+## __*Pesos Sinápticos*__
 
 Para os pesos (**W**) será necessário um vetor com o **tamanho equivalente aos dados de entrada (X)**, ou seja, **para cada bit (posição) do vetor X será necessário um peso (posição) do vetor W**, neste caso como  vetor X tem 3 posições, o vetor W terá **3 posições**.
 
@@ -275,7 +275,7 @@ Um detalhe a se destacar, é que o peso **inicia com um valor aleatório**, nest
 - __*Foi Selecionado o primeiro exemplo (000) e o modelo foi preenchido*__
 
 
-## __*Função Combinadora / Somadora
+## __*Função Combinadora / Somadora*__
 
 O primeiro cálculo será feito utilizando a **Função Combinadora / Somadora**, que realiza uma soma ponderada entre o produto de cada entrada e seu peso sináptico **equivalente** e somaremos com o produto entre o bias e seu peso sináptico:
 
@@ -307,7 +307,7 @@ O primeiro cálculo será feito utilizando a **Função Combinadora / Somadora**
 
 
 
-## Função de Transferência (Função Degrau)
+## __*Função de Transferência (Função Degrau)*__
 
 Para obtermos o resultado final (1 ou 0) utilizaremos uma **Função de Transferência**, existem várias, porém será usada a **Função Degrau**, que basicamente funciona assim:
 
@@ -339,14 +339,14 @@ Como é representado neste trecho do código:
 
 
 
-## Algoritmo de Aprendizado (Correção de Erro)
+## __*Algoritmo de Aprendizado (Correção de Erro)*__
 
 O método de aprendizagem trabalhado, é o método de **Aprendizagem Supervisionada**, onde nos é dado um conjunto de dados rotulados que já sabemos qual é a nossa saída correta e que deve ser semelhante ao conjunto, tendo a ideia de que existe uma relação entre a entrada e a saída (Fonte: [Opensanca](https://medium.com/opensanca/aprendizagem-de-maquina-supervisionada-ou-n%C3%A3o-supervisionada-7d01f78cd80a) ([Pedro Barros](https://pedro-barros.medium.com/?source=post_page-----7d01f78cd80a--------------------------------)))
 
 Sendo assim o cálculo do  erro será feito da seguinte forma:
 
 
-## Cálculo do Erro
+## __*Cálculo do Erro*__
 
 A função deste cálculo é **verificar se a rede neural acertou ou não.** 
 
@@ -381,7 +381,7 @@ se **Et** for igual a **0** significa que a rede neural **acertou**, porém o al
 
 
 
-## Algoritmo de Aprendizado(Regra Delta)
+## __*Algoritmo de Aprendizado(Regra Delta)*__
 	
 A função deste cálculo é **reajustar os pesos sinápticos de acordo com cálculo do Erro (Et)**, para isso existem vários algoritmos, mas, para este código foi usado a **Regra delta**, o mesmo vale para o peso do Bias:
 
