@@ -1,4 +1,4 @@
-# __*IA-Perceptron-java*__
+# __*RNA-Perceptron-java*__
 
 
 [![Badge](https://img.shields.io/static/v1?label=Samuel&message=Ricardo&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/Samuel-Ricardo)
@@ -200,28 +200,28 @@ O mesmo vale para o resultado, como os resultados possíveis são apenas 2 ( **�
 
 ![arquitetura de uma perceptron](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Arquitetura_Perceptron.jpeg)
 
-Essa imagem é uma demonstração visual de como a RNA trabalha,.
+Essa imagem é uma demonstração visual de como a RNA (Rede Neural) trabalha.
 
-- X = Dados de entrada -> bit (1 / 0)
+- **X** = Dados de entrada -> bit (1 / 0)
   - [tipo int, pois só são aceitos os valores 1 e 0]
 
-- W = Pesos Sinápticos que serão usados nas operações matemáticas para obter o resultado
+- **W** = Pesos Sinápticos que serão usados nas operações matemáticas para obter o resultado
   -  [Tipo float, pois o peso pode ter qualquer valor]
 
-- Bias = Um termo constante que não depende de qualquer valor de entrada. 
+- **Bias** = Um termo constante que não depende de qualquer valor de entrada. 
   - [tipo int, pois só são aceitos os valores 1 e 0]
 
-- Wb = Peso do Bias
+- **Wb** = Peso do Bias
   - [Tipo float, pois o peso pode ter qualquer valor]
 
-- U = Resultado da Função Combinadora / Somadora
+- **U** = Resultado da Função Combinadora / Somadora
   -  [Tipo float, pois o pode ter qualquer valor]
   
-- g(u) = Função de Transferência (Função Degrau) que resume o resultado em 1 ou 0 
+- **g(u)** = Função de Transferência (Função Degrau) que resume o resultado em 1 ou 0 
 
-- Y = resultado final (1 ou 0)
+- **Y** = resultado final (1 ou 0)
   - [tipo int, pois só são aceitos os valores 1 e 0]
   
-- N =   Taxa de Aprendizado, é uma constante e seu valor é aleatório, mas para este código foi escolhido o valor 1.
+- **N** =   Taxa de Aprendizado, é uma constante e seu valor é aleatório, mas para este código foi escolhido o valor 1.
 
 
