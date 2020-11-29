@@ -248,7 +248,7 @@ int[] x = new int [4];
 
 
 
-![treinamento 01](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_01.jpeg)
+> ![treinamento 01](https://github.com/Samuel-Ricardo/IA-Perceptron-java/blob/master/Readme/Treinamento_01.jpeg)
 
 - __*Modelo de Um neurônio*__
 
