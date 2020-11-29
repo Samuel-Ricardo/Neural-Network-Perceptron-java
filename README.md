@@ -10,7 +10,7 @@
 
 [![Badge](https://img.shields.io/static/v1?label=Artificial&message=Intelligence&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/search?q=Artificial+Intelligence)
 [![Badge](https://img.shields.io/static/v1?label=Neural&message=Network&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/search?q=Neural+Network)
-
+[![Badge](https://img.shields.io/static/v1?label=Perceptron&message=Project&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/search?q=Perceptron)
 
 [![Badge](https://img.shields.io/static/v1?label=Version&message=1.0.2&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/Samuel-Ricardo/IA-Perceptron-java)
 [![Badge](https://img.shields.io/static/v1?label=State&message=Finalized&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/Samuel-Ricardo/IA-Perceptron-java)
@@ -44,5 +44,20 @@
     
 > [![Redes Neurais Artificiais, Perceptron Simples,Parte 1: Problema, Arquitetura e Componentes](http://img.youtube.com/vi/PMfarAZdNSA/0.jpg)](http://www.youtube.com/watch?v=PMfarAZdNSA "Redes Neurais Artificiais, Perceptron Simples, Parte 1: Problema, Arquitetura e Componentes")
 
+Nesse Projeto é realizada a criação de uma IA (Inteligência Artificial) [Perceptron](https://en.wikipedia.org/wiki/Perceptron) utilizando a linguagem Java, sua função é descobrir se os dados enviados para ele representa um ser vivo ou não.
 
-Exemplo do uso de uma Perceptron usando 1 neurônio para descobrir se é um ser vivo ou não  Usando a Linguagem Java;
+É o meu primeiro projeto, foi feito inicialmente em algoritmos com [VisualG](https://visualg3.com.br/) posteriormente passado para Java, sendo assim meu primeiro projeto Java após finalizar os estudos em algoritmos, é também o projeto que deu início ao meu github.
+
+Este projeto não usa nenhuma interface gráfica, a interação ocorre a partir do terminal da IDE, utilizando o comando 
+```java
+System.out.print(“”);
+``` 
+e a 
+```java
+java.util.Scanner
+``` 
+para obter os dados de input (Entrada de dados).
+ 
+Os procedimentos são baseados em lógica, ou seja, ele não depende da linguagem de programação, a mesma lógica pode ser aplicada a qualquer outra linguagem, incluindo algoritmos como o VisualG.
+ 
+
