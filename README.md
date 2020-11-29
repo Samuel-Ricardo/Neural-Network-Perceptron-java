@@ -1,4 +1,4 @@
-# __*RNA-Perceptron-java*__
+# __*Rede-Neural-Perceptron-java*__
 
 
 [![Badge](https://img.shields.io/static/v1?label=Samuel&message=Ricardo&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/Samuel-Ricardo)
@@ -46,7 +46,7 @@
 
 
 
-# __*RNA-Perceptron-java*__
+# __*Rede-Neural-Perceptron-java*__
 
 
 Nesse Projeto é realizada a **criação de uma [Rede Neural](https://pt.wikipedia.org/wiki/Rede_neural_artificial#:~:text=Em%20ci%C3%AAncia%20da%20computa%C3%A7%C3%A3o%20e,como%20o%20reconhecimento%20de%20padr%C3%B5es.) [Perceptron](https://en.wikipedia.org/wiki/Perceptron)** utilizando a linguagem Java, sua função é **descobrir se os dados enviados para ele representa um ser vivo ou não.**
