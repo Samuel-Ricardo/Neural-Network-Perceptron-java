@@ -44,11 +44,11 @@
     
 > [![Redes Neurais Artificiais, Perceptron Simples,Parte 1: Problema, Arquitetura e Componentes](http://img.youtube.com/vi/PMfarAZdNSA/0.jpg)](http://www.youtube.com/watch?v=PMfarAZdNSA "Redes Neurais Artificiais, Perceptron Simples, Parte 1: Problema, Arquitetura e Componentes")
 
-Nesse Projeto é realizada a criação de uma IA (Inteligência Artificial) [Perceptron](https://en.wikipedia.org/wiki/Perceptron) utilizando a linguagem Java, sua função é descobrir se os dados enviados para ele representa um ser vivo ou não.
+Nesse Projeto é realizada a **criação de uma IA (Inteligência Artificial) [Perceptron](https://en.wikipedia.org/wiki/Perceptron)** utilizando a linguagem Java, sua função é **descobrir se os dados enviados para ele representa um ser vivo ou não.**
 
-É o meu primeiro projeto, foi feito inicialmente em algoritmos com [VisualG](https://visualg3.com.br/) posteriormente passado para Java, sendo assim meu primeiro projeto Java após finalizar os estudos em algoritmos, é também o projeto que deu início ao meu github.
+É o meu **primeiro projeto**, foi feito inicialmente em algoritmos com [VisualG](https://visualg3.com.br/) posteriormente passado para Java, sendo assim meu primeiro projeto Java após finalizar os estudos em algoritmos, é também **o projeto que deu início ao meu github.**
 
-Este projeto não usa nenhuma interface gráfica, a interação ocorre a partir do terminal da IDE, utilizando o comando 
+Este projeto não usa nenhuma **interface gráfica**, a interação ocorre a partir do **terminal** da IDE, utilizando o comando 
 ```java
 System.out.print(“”);
 ``` 
@@ -58,6 +58,33 @@ java.util.Scanner
 ``` 
 para obter os dados de input (Entrada de dados).
  
-Os procedimentos são baseados em lógica, ou seja, ele não depende da linguagem de programação, a mesma lógica pode ser aplicada a qualquer outra linguagem, incluindo algoritmos como o VisualG.
+Os procedimentos são baseados em lógica, ou seja, ele **não depende da linguagem de programação**, a mesma lógica pode ser aplicada a **qualquer** outra linguagem, incluindo algoritmos como o VisualG.
  
 
+## Conversão de dados
+ 
+As **[redes neurais](https://pt.wikipedia.org/wiki/Rede_neural_artificial#:~:text=Em%20ci%C3%AAncia%20da%20computa%C3%A7%C3%A3o%20e,como%20o%20reconhecimento%20de%20padr%C3%B5es.) entendem apenas [bits](https://pt.wikipedia.org/wiki/Bit#:~:text=O%20bit%20(simplifica%C3%A7%C3%A3o%20para%20d%C3%ADgito,ou%20passagem%20de%20energia%2C%20respectivamente. )**, por isso, de alguma forma, deve ser feita uma conversão dos dados para bits fazendo com que a rede neural seja capaz de compreender e processar os dados, um exemplo simples seria utilizar  1 (Verdadeiro) ou 0 (falso) para indicar se um funcionário está empregado ou desempregado.
+ 
+No caso desta atividade os dados são letras (nomes de seres vivos e de objetos) porém, como visto, redes neurais não entendem letras, então foi necessário realizar a conversão das palavras para bits. 
+
+Possuímos 8 valores (palavras), então foi preciso descobrir com quantos bits se consegue representar até 8 valores (palavras), sabendo que:
+
+ 1 bit  consegue representar a 2 valores (0 / 1) 
+
+ temos 2 (número de valores possíveis para 1 bit) ^ N (quantidade de bits)
+ 
+ logo:
+
+ - 1 bit -> 2^1 = 2 valores  
+
+   - 0 e 1
+ 
+ 
+ - 2 bits -> 2^2 = 4 valores 
+ 
+   - 00, 01, 10, 11
+ 
+ 
+ - 3 bits -> 2^3 = 8 valores 
+
+   - 000, 001, 010, 011, 100, 101, 110, 111
