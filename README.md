@@ -4,7 +4,7 @@
 [![Badge](https://img.shields.io/static/v1?label=Samuel&message=Ricardo&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/Samuel-Ricardo)
 [![Badge](https://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge&logo=GITHUB)](https://github.com/git/git-scm.com/blob/master/MIT-LICENSE.txt)
 
-[![Badge](https://img.shields.io/static/v1?label=Made%20Whit&message=Java&color=red&style=for-the-badge&logo=JAVA)](https://www.java.com/pt-BR/about/whatis_java.jsp)
+[![Badge](https://img.shields.io/static/v1?label=Made%20Whit&message=Java&color=red&style=for-the-badge&logo=JAVA)](https://www.oracle.com/java/technologies/)
 [![Badge](https://img.shields.io/static/v1?label=Made%20Whit&message=NetBeans&color=red&style=for-the-badge&logo=JAVA)](https://netbeans.apache.org/)
 [![Badge](https://img.shields.io/static/v1?label=JDK&message=8&color=red&style=for-the-badge&logo=JAVA)](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 
@@ -28,7 +28,7 @@
 - __*Versão Atual:*__ 1.0.2
 
 ## __*O que foi Usado*__
-- __*[Java](https://www.java.com/pt-BR/about/whatis_java.jsp)*__,
+- __*[Java](https://www.oracle.com/java/technologies/)*__,
 - __*[NetBeans](https://netbeans.apache.org/)*__
  
 ## __*O que é necessário para rodar:*__
